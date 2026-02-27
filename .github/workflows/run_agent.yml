@@ -2,8 +2,11 @@ name: Autonomous Diet & Nutrition Agent
 
 on:
   schedule:
-    - cron: '0 9 * * *'    # Every day at 9:00 AM UTC automatically
-  workflow_dispatch:         # Manual trigger for testing
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-agent:
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
