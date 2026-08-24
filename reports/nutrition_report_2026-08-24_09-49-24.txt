@@ -1,0 +1,155 @@
+======================================================================
+   AUTONOMOUS DIET & NUTRITION AGENT — DAILY REPORT
+   Date       : 2026-08-24 09:49:24
+   Data Source: USDA FoodData Central API
+   Mode       : Fully Automatic — No Human Intervention
+======================================================================
+
+📊 TODAY'S DATA SUMMARY
+   Total Food Items Analyzed : 171
+   Food Categories           : 7
+   Hypothesis Tests Run      : 10
+   Significant Findings      : 7
+
+🎯 NUTRIENT LEVELS vs WHO DAILY RECOMMENDATIONS
+----------------------------------------------------------------------
+   calories     :   393.89 (recommended:  2000) —   19.7%  ✅ OK
+   protein      :      6.9 (recommended:    50) —   13.8%  ✅ OK
+   carbs        :    35.55 (recommended:   275) —   12.9%  ✅ OK
+   fat          :      7.2 (recommended:    78) —    9.2%  ✅ OK
+   fiber        :     3.28 (recommended:    28) —   11.7%  ✅ OK
+   sugar        :    10.12 (recommended:    50) —   20.2%  ✅ OK
+   sodium       :   307.06 (recommended:  2300) —   13.4%  ✅ OK
+   calcium      :    67.47 (recommended:  1300) —    5.2%  ✅ OK
+   iron         :     2.63 (recommended:    18) —   14.6%  ✅ OK
+   vitamin_c    :     4.28 (recommended:    90) —    4.8%  ✅ OK
+
+🤖 AI NUTRITIONIST DAILY ADVICE
+----------------------------------------------------------------------
+DAILY NUTRITION REPORT
+Significant findings: 7/10
+• Does food category significantly affect protein content? (Eta Squared=0.2734 [Large Effect])
+• Does food category significantly affect sugar content? (Eta Squared=0.1845 [Large Effect])
+• Does food category significantly affect fiber content? (Eta Squared=0.1592 [Large Effect])
+• Does food category significantly affect sodium content? (Eta Squared=0.1987 [Large Effect])
+• Does fat content strongly correlate with calories? (Pearson r=0.3903 [Moderate])
+• Does sugar content correlate with calories? (Pearson r=0.2161 [Weak])
+• Does carbohydrate content correlate with calories? (Pearson r=0.4845 [Moderate])
+
+🥗 TODAY'S TOP 10 HEALTHIEST FOODS
+----------------------------------------------------------------------
+                                                  food_name                          category  calories  protein  fiber  sugar  health_score
+                                       PASTA LEGUME, ELBOWS       Legumes and Legume Products     357.0    25.00   30.4   1.79       138.070
+   MANITOU TRADING COMPANY, WHOLESOME LEGUMES GIGANTE BEANS       Legumes and Legume Products     343.0    22.90   20.0   2.86       101.510
+         MANITOU TRADING COMPANY, ARTISAN LEGUME SOUP BLEND       Legumes and Legume Products     314.0    20.00   20.0   2.86        95.710
+                     Cereals ready-to-eat, UNCLE SAM CEREAL                 Breakfast Cereals     346.0    16.00   20.3   1.56        84.760
+MANITOU TRADING COMPANY, WHOLESOME LEGUMES CANNELLINI BEANS       Legumes and Legume Products     343.0    22.90   14.3   2.86        84.410
+Beverages, coffee substitute, cereal grain beverage, powder                         Beverages    1510.0     6.01   23.3   4.63        73.715
+                              Beef, for use with vegetables Vegetables and Vegetable Products     191.0    32.41    0.0   0.00        61.410
+         SPANISH STYLE ORGANIC LEGUME RISONI, SPANISH STYLE       Legumes and Legume Products     356.0    20.00    8.9   4.44        58.375
+         GARLIC & HERB ORGANIC LEGUME RISONI, GARLIC & HERB       Legumes and Legume Products     356.0    20.00    6.7   2.22        55.105
+                      Baking chocolate, unsweetened, liquid                    Baked Products    1980.0    12.10   18.1   0.00        54.650
+
+⚠️ TODAY'S TOP 10 HIGHEST CALORIE FOODS
+----------------------------------------------------------------------
+                                                                      food_name                          category  calories   fat  sugar
+                                                             Taco shells, baked                    Baked Products    1990.0 21.80   1.50
+                           Snacks, vegetable chips, made from garden vegetables Vegetables and Vegetable Products    1980.0 23.30   4.04
+                                          Baking chocolate, unsweetened, liquid                    Baked Products    1980.0 47.70   0.00
+                                             Baking chocolate, mexican, squares                    Baked Products    1780.0 15.60  69.40
+                        Babyfood, baked product, finger snacks cereal fortified                    Baked Products    1760.0  9.90  28.00
+Beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients                         Beverages    1670.0  2.27  81.80
+                                   Beverages, Carob-flavor beverage mix, powder                         Beverages    1560.0  0.20   0.00
+                                                             Fast food, biscuit                        Fast Foods    1550.0 18.90   3.88
+                                              Fast foods, biscuit, with sausage                        Fast Foods    1550.0 24.40   1.59
+                    Beverages, coffee substitute, cereal grain beverage, powder                         Beverages    1510.0  2.52   4.63
+
+📈 FOOD CATEGORY RANKING (by avg calories)
+----------------------------------------------------------------------
+                                   avg_calories  avg_protein  avg_fiber  avg_sugar  avg_fat  food_count
+category                                                                                               
+Fast Foods                               587.88         7.37       1.49       4.36    12.80          25
+Breakfast Cereals                        531.76         8.64       5.88      17.76     8.21          25
+Baked Products                           520.74         6.25       3.80       9.22    11.24          23
+Beverages                                321.00         1.16       1.69      11.42     0.70          24
+Sweets                                   286.40         4.25       1.96      22.50     7.56          25
+Legumes and Legume Products              274.24        13.37       6.22       2.68     2.06          25
+Vegetables and Vegetable Products        236.12         6.97       1.83       2.55     7.87          24
+
+🔬 HYPOTHESIS TESTING RESULTS
+----------------------------------------------------------------------
+
+  #1 [❌ NOT SIGNIFICANT]
+      Hypothesis : Does food category significantly affect calorie content?
+      Test       : ANOVA
+      Statistic  : 2.755
+      p-value    : 1.4086e-02
+      Effect Size: Eta Squared=0.0916 [Medium Effect]
+
+  #2 [✅ SIGNIFICANT]
+      Hypothesis : Does food category significantly affect protein content?
+      Test       : ANOVA
+      Statistic  : 10.2852
+      p-value    : 1.1736e-09
+      Effect Size: Eta Squared=0.2734 [Large Effect]
+
+  #3 [✅ SIGNIFICANT]
+      Hypothesis : Does food category significantly affect sugar content?
+      Test       : ANOVA
+      Statistic  : 6.1855
+      p-value    : 7.1733e-06
+      Effect Size: Eta Squared=0.1845 [Large Effect]
+
+  #4 [✅ SIGNIFICANT]
+      Hypothesis : Does food category significantly affect fiber content?
+      Test       : ANOVA
+      Statistic  : 5.1735
+      p-value    : 6.7284e-05
+      Effect Size: Eta Squared=0.1592 [Large Effect]
+
+  #5 [✅ SIGNIFICANT]
+      Hypothesis : Does food category significantly affect sodium content?
+      Test       : ANOVA
+      Statistic  : 6.7759
+      p-value    : 1.9675e-06
+      Effect Size: Eta Squared=0.1987 [Large Effect]
+
+  #6 [✅ SIGNIFICANT]
+      Hypothesis : Does fat content strongly correlate with calories?
+      Test       : Pearson Correlation
+      Statistic  : 0.3903
+      p-value    : 1.3168e-07
+      Effect Size: Pearson r=0.3903 [Moderate]
+
+  #7 [❌ NOT SIGNIFICANT]
+      Hypothesis : Does protein content correlate with calories?
+      Test       : Pearson Correlation
+      Statistic  : 0.1941
+      p-value    : 1.0969e-02
+      Effect Size: Pearson r=0.1941 [Weak]
+
+  #8 [✅ SIGNIFICANT]
+      Hypothesis : Does sugar content correlate with calories?
+      Test       : Pearson Correlation
+      Statistic  : 0.2161
+      p-value    : 4.5331e-03
+      Effect Size: Pearson r=0.2161 [Weak]
+
+  #9 [✅ SIGNIFICANT]
+      Hypothesis : Does carbohydrate content correlate with calories?
+      Test       : Pearson Correlation
+      Statistic  : 0.4845
+      p-value    : 1.8948e-11
+      Effect Size: Pearson r=0.4845 [Moderate]
+
+  #10 [❌ NOT SIGNIFICANT]
+      Hypothesis : Does fiber content inversely correlate with sugar?
+      Test       : Pearson Correlation
+      Statistic  : -0.0264
+      p-value    : 7.3148e-01
+      Effect Size: Pearson r=0.0264 [Negligible]
+
+======================================================================
+  [AGENT] Daily analysis complete. Zero manual intervention.
+  [AGENT] Next auto-run: Tomorrow 9:00 AM UTC
+======================================================================
